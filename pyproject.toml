@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "python-wiki-api"
+version = "0.1.0"
+authors = ["zazhka <alexander.zanousky@gmail.com>"]
+description = "The wikipedia API based on hypermodern python"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/Zazhka/python_wiki_api"
+repository = "https://github.com/Zazhka/python_wiki_api"
+keywords = ["wikiapi"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^7.1.2"
+requests = "^2.24.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+python-wiki-api = "python_wiki_api.console:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
