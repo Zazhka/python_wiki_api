@@ -15,6 +15,10 @@ click = "^7.1.2"
 requests = "^2.24.0"
 
 [tool.poetry.dev-dependencies]
+pytest = "^6.1.2"
+coverage = {version = "^5.3", extras = ["toml"]}
+pytest-cov = "^2.10.1"
+pytest-mock = "^3.3.1"
 
 [tool.poetry.scripts]
 python-wiki-api = "python_wiki_api.console:main"
@@ -22,3 +26,14 @@ python-wiki-api = "python_wiki_api.console:main"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["python_wiki_api"]
+
+[tool.coverage.report]
+fail_under = 100
+show_missing = true
