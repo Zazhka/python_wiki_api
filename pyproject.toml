@@ -13,12 +13,19 @@ keywords = ["wikiapi"]
 python = "^3.8"
 click = "^7.1.2"
 requests = "^2.24.0"
+flake8-isort = "^4.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.1.2"
 coverage = {version = "^5.3", extras = ["toml"]}
 pytest-cov = "^2.10.1"
 pytest-mock = "^3.3.1"
+black = "^20.8b1"
+flake8 = "^3.8.4"
+flake8-bandit = "^2.1.2"
+flake8-black = "^0.2.1"
+flake8-bugbear = "^20.1.4"
+safety = "^1.9.0"
 
 [tool.poetry.scripts]
 python-wiki-api = "python_wiki_api.console:main"
