@@ -14,6 +14,8 @@ python = "^3.8"
 click = "^7.1.2"
 requests = "^2.24.0"
 flake8-isort = "^4.0.0"
+desert = "^2020.1.6"
+marshmallow = "^3.9.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.1.2"
@@ -26,6 +28,10 @@ flake8-bandit = "^2.1.2"
 flake8-black = "^0.2.1"
 flake8-bugbear = "^20.1.4"
 safety = "^1.9.0"
+mypy = "^0.790"
+pytype = {version = "^2020.11.12", python = "3.8"}
+typeguard = "^2.10.0"
+flake8-annotations = "^2.4.1"
 
 [tool.poetry.scripts]
 python-wiki-api = "python_wiki_api.console:main"
